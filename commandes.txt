@@ -1,0 +1,80 @@
+Array
+(
+    [email] => soumaya.adali@sesame.com.tn
+    [adresse] => fffffffffffffff
+    [panier] => Array
+        (
+            [0] => Array
+                (
+                    [nom] => All in One Lenovo
+                    [prix] => 990
+                    [quantite] => 1
+                )
+
+        )
+
+)
+Array
+(
+    [email] => soumaya.adali@sesame.com.tn
+    [adresse] => fffffffffffffff
+    [panier] => Array
+        (
+            [0] => Array
+                (
+                    [nom] => Dell Vostro
+                    [prix] => 1390
+                    [quantite] => 1
+                )
+
+        )
+
+)
+Array
+(
+    [email] => soumaya.adali@sesame.com.tn
+    [adresse] => fffffffffffffff
+    [panier] => Array
+        (
+            [0] => Array
+                (
+                    [nom] => All in One Lenovo
+                    [prix] => 990
+                    [quantite] => 2
+                )
+
+        )
+
+)
+Array
+(
+    [email] => soumaya.adali@sesame.com.tn
+    [adresse] => fffffffffffffff
+    [panier] => Array
+        (
+            [0] => Array
+                (
+                    [nom] => Dell Vostro
+                    [prix] => 1390
+                    [quantite] => 1
+                )
+
+        )
+
+)
+Array
+(
+    [email] => soumaya.adali@sesame.com.tn
+    [adresse] => fffffffffffffff
+    [panier] => Array
+        (
+            [0] => Array
+                (
+                    [nom] => All in One Lenovo
+                    [prix] => 990
+                    [quantite] => 1
+                )
+
+        )
+
+)

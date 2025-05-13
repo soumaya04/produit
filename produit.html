@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Produit | Matériel Informatique</title>
+  <style>
+    /* Ton design reste strictement inchangé ici */
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+
+    header {
+      background-color: #3e1f1f;
+      padding: 20px;
+      text-align: center;
+      color: white;
+      position: relative;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    .panier-button {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #ffcc99;
+      color: #3e1f1f;
+      padding: 10px 15px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav {
+      background-color: #5a2e2e;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffcc99;
+    }
+
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .category {
+      margin-bottom: 50px;
+    }
+
+    .category h2 {
+      color: #3e1f1f;
+      border-bottom: 2px solid #ccc;
+      padding-bottom: 10px;
+      margin-bottom: 25px;
+      text-align: left;
+    }
+
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .product-card {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+      transition: transform 0.2s;
+    }
+
+    .product-card:hover {
+      transform: scale(1.03);
+    }
+
+    .product-card img {
+      max-width: 100%;
+      height: 140px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .product-card p {
+      margin: 10px 0;
+    }
+
+    .product-card button {
+      background-color: #3e1f1f;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .product-card button:hover {
+      background-color: #ffcc99;
+      color: #3e1f1f;
+    }
+
+    footer {
+      background-color: #3e1f1f;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+ <header>
+    <h1>PRODUITS</h1>
+    
+    <a href="panier.html" class="panier-button">🛒 Voir le panier</a>
+</header>
+
+  <nav>
+    <a href="acceuil.html">ACCUEIL</a>
+    <a href="commande.html">COMMANDES</a>
+  </nav>
+
+  <section>
+    <div class="category">
+      <h2>PC portables</h2>
+      <div class="products">
+        <div class="product-card">
+          <img src="im1.webp" alt="PH Pro">
+          <p><strong>PH Pro</strong><br>1299.000 DT</p>
+          <button onclick="ajouterAuPanier('PH Pro', 1299)">Ajouter au panier</button>
+        </div>
+        <div class="product-card">
+          <img src="im1.webp" alt="All in One Lenovo">
+          <p><strong>All in One Lenovo</strong><br>990.000 DT</p>
+          <button onclick="ajouterAuPanier('All in One Lenovo', 990)">Ajouter au panier</button>
+        </div>
+        <div class="product-card">
+          <img src="im1.webp" alt="Dell Vostro">
+          <p><strong>Dell Vostro</strong><br>1390.000 DT</p>
+          <button onclick="ajouterAuPanier('Dell Vostro', 1390)">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Système d'alarme</h2>
+      <div class="products">
+        <div class="product-card">
+          <img src="im2.jpg" alt="Alarme télécommande">
+          <p><strong>Alarme avec télécommande</strong><br>1190.000 DT</p>
+          <button onclick="ajouterAuPanier('Alarme avec télécommande', 1190)">Ajouter au panier</button>
+        </div>
+        <div class="product-card">
+          <img src="im2.jpg" alt="Alarme filaire">
+          <p><strong>Alarme filaire</strong><br>990.000 DT</p>
+          <button onclick="ajouterAuPanier('Alarme filaire', 990)">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Écrans</h2>
+      <div class="products">
+        <div class="product-card">
+          <img src="im3.jpg" alt="PC HP">
+          <p><strong>PC HP 260 G4</strong><br>1830.000 DT</p>
+          <button onclick="ajouterAuPanier('PC HP 260 G4', 1830)">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="category">
+      <h2>Imprimantes</h2>
+      <div class="products">
+        <div class="product-card">
+          <img src="im4.jpg" alt="Canon laser">
+          <p><strong>Canon laser</strong><br>370.000 DT</p>
+          <button onclick="ajouterAuPanier('Canon laser', 370)">Ajouter au panier</button>
+        </div>
+        <div class="product-card">
+          <img src="im4.jpg" alt="Canon réserve">
+          <p><strong>Canon réserve</strong><br>370.000 DT</p>
+          <button onclick="ajouterAuPanier('Canon réserve', 370)">Ajouter au panier</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Matériel Informatique. Tous droits réservés.
+  </footer>
+
+  <!-- Juste ce script externe ajouté à la fin -->
+  <script src="script.js"></script>
+
+</body>
+</html>
